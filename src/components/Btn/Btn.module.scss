@@ -1,0 +1,22 @@
+.btn {
+  background: #728BAD;
+  border-radius: 42px;
+  padding: 11px 70px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #F5F5F5;
+
+  border: none;
+  cursor: pointer;
+
+  @media(max-width: 475px) {
+    transition: .8s all ease;
+    padding: 7.5px 26.5px;
+    font-size: 16px;
+  }
+}

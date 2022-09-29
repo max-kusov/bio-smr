@@ -1,0 +1,148 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-height: calc(100vh - 95px);
+  width: 100%;
+  background-image: url(../assets/img/vector.png);
+
+  @media(max-width: 920px) {
+    transition: .8s all ease;
+    width: 920px;
+  }
+
+  @media(max-width: 475px) {
+    transition: .8s all ease;
+    width: 475px;
+  }
+}
+
+.wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+  width: 80%;
+
+  @media(max-width: 475px) {
+    transition: .8s all ease;
+    width: 475px;
+    padding-top: 10%;
+
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+.price {
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/img/vector.png);
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  &__calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 150px 0;
+  }
+
+  &__arrow {
+    position: relative;
+    width: 90%;
+    margin: 30px 0;
+
+    & span {
+      font-size: 24px;
+    }
+
+    & img {
+      position: absolute;
+      top: 25px;
+      right: -180px;
+      rotate: 45deg;
+      width: 200px;
+    }
+  }
+
+  @media(max-width: 920px) {
+    transition: .8s all ease;
+    width: 920px;
+
+  }
+
+  @media(max-width: 475px) {
+    transition: .8s all ease;
+    width: 475px;
+    padding-top: 10%;
+
+
+    &__arrow {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+.contact {
+
+  &__info {
+    margin-right: 5%;
+  }
+
+  & h1 {
+    margin-bottom: 50px;
+  }
+
+  &__map {
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  &__link {
+    margin-top: 70px;
+
+    & a,
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      margin: 10px;
+    }
+
+    svg {
+      font-size: 24px;
+    }
+  }
+
+  @media(max-width: 475px) {
+    transition: .8s all ease;
+    width: 475px;
+
+    &__info {
+      margin-right: 0;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    &__map {
+      width: 80%;
+      margin-bottom: 10%;
+    }
+
+    & iframe {
+      width: 200px;
+    }
+
+  }
+}

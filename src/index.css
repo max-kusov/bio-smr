@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: #222021;
+
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+  font-family: "Inter";
+  font-style: normal;
+  color: #F5F5F5;
+  font-weight: 400;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 115.4%;
+}
+
+@media(max-width: 1020px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media(max-width: 820px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.active {
+  color: #A3B8D7;
 }

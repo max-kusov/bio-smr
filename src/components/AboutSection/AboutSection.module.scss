@@ -1,0 +1,148 @@
+.root {
+  height: 900px;
+  width: 100%;
+  position: relative;
+
+  &__window {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(#1E0C06, .8);
+    border-radius: 0px 43px 43px 0px;
+
+    width: 90%;
+    height: 714px;
+    padding: 72px;
+
+    position: absolute;
+    left: 0;
+    // right: 195px;
+    top: 118px;
+    filter: drop-shadow(0px 4px 52px rgba(245, 245, 245, 0.17));
+  }
+
+  &__text {
+    width: 60%;
+
+    & h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    & span {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 139.4%;
+
+
+      color: #F5F5F5;
+    }
+  }
+
+  &__img {
+    width: 40%;
+    height: 100%;
+    position: relative;
+
+    :first-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    :nth-child(2) {
+      position: absolute;
+      top: 25%;
+      left: 20%;
+      z-index: 1;
+      width: 60%;
+    }
+
+    :last-child {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+    }
+  }
+
+  @media(max-width: 920px) {
+    transition: .8s all ease;
+    width: 920px;
+
+    &__window {
+      padding: 37px;
+      height: 600px;
+    }
+
+    &__img {
+      // width: 90%;
+      // height: 90%;
+      width: 50%;
+
+      :first-child {
+        width: 60%;
+        top: 5%;
+      }
+
+      :nth-child(2) {
+        width: 70%;
+        // top: 25%;
+      }
+
+      :last-child {
+        width: 60%;
+        bottom: 10%;
+        left: 40%;
+      }
+    }
+
+    & span {
+      font-size: 20px;
+    }
+  }
+
+  @media(max-width: 475px) {
+    transition: .8s all ease;
+    width: 475px;
+
+    // height: 674px;
+
+    &__window {
+      // padding: 37px;
+      height: 700px;
+
+      flex-direction: column;
+    }
+
+    &__text {
+      width: 100%;
+    }
+
+    &__img {
+      width: 90%;
+      height: 90%;
+
+      :first-child {
+        width: 40%;
+        top: 5%;
+      }
+
+      :nth-child(2) {
+        width: 60%;
+        top: 20%;
+      }
+
+      :last-child {
+        width: 50%;
+      }
+    }
+
+    & span {
+      font-size: 16px;
+    }
+
+  }
+
+}
